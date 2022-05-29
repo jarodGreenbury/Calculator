@@ -3,9 +3,15 @@ import './Home.css';
 const Number = (props) => {
     
     const number = props.number;
-
+    var total = props.total;
+    total += number;
+    
     return ( 
-        <button>{number}</button>
+        <div>
+            <button className='button'>{number}</button>
+            {total}
+        </div>
+        
      );
 }
  
